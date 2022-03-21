@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="App/js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/App/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <header class="logo">
+    <p>S P L I<br>T T E R</p><br>
+  </header>
+  <div class="flex margin padding background">
+    <div class="table__row">
+      <div class="calculation table__column">
+        <div class="calculation__bill">
+          <h2>Bill</h2>
+          <div>
+            <form>
+              <input placeholder="$" type="number" value="" id="bill" oninput="render()" class="calculation__input-text">
+            </form>
+          </div>
+        </div>
+  
+        <div class="calculation__tip">
+          <h2>Select Tip %</h2>
+          <div class="calculation__tip-buttons">
+            <button id="percent" value="5"  class="item1">5%</button> 
+            <button id="percent" value="10" class="item2">10%</button> 
+            <button id="percent" value="15" class="item2">15%</button>
+            <button id="percent" value="25" class="item2">25%</button> 
+            <button id="percent" value="50" class="item2">50%</button> 
+            <button id="percent" value="75" class="item2">75%</button>
+          </div>
+        </div>
+  
+        <div>
+  
+        </div class="calculation__people">
+        <h2>Number of People</h2>
+        <form>
+          <input placeholder="👤" type="number" value="" id="numOfPeople" oninput="render()" class="calculation__input-text">
+        </form>
+      </div>
+      <div class="result table__column">
+  
+        <div>
+          <h2>Tip Amount <span id="subTip" class="result__money">$0.00</span></h2>
+          <p>/ person </p>
+        </div>
+  
+        <div>
+          <h2>Total <span id="subTotal" class="result__money">$0.00</span></h2>
+          <p>/ person</p>
+        </div>
+        <button id="btn-reset" onclick="reset()">RESET</button>
+      </div>
+    </div>
+  </div>
+  <script src="/App/js/calculation.js"></script>
+</body>
+</html>

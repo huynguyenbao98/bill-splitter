@@ -1,0 +1,79 @@
+.calculation {
+    input {
+        width: 90%;
+        border: none;
+        border-radius: 3.5px;
+        background-color: #F3F8FB;
+
+        &:hover{
+            border: 1.5px solid #5CA99F;
+        }
+
+        &::placeholder {
+            text-align: left;
+        }
+    }
+
+    &__input-text {
+        font-family: 'Space Mono', monospace;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: right;
+        color: #104344;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 12px;
+        color: #6B7E7C;
+        font-weight: 700;
+    }
+
+    &__bill {
+        margin-bottom: 1.375rem;
+    }
+
+    &__tip {
+        margin-bottom: 1.375rem;
+
+        button {
+            margin-top: 0.3125rem;
+            margin-bottom: 0.3125rem;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+            background-color: hsl(183, 100%, 15%);
+            color: white;
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+
+            &:hover {
+                background-color: #9FE8DF;
+                color: #033C3B;
+                transition: color 300ms ease-in-out;
+            }
+
+            &:active {
+                background-color: #26C2AD;
+                transition: color 300ms ease-in-out;
+            }
+        }
+    }
+}
+
+//padding of buttons in calculation part
+
+.item1 {
+    padding-left: 1.625rem;
+    padding-right: 1.625rem;
+}
+
+.item2 {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+}
+
+.item3{
+    padding-left: 0.4375rem;
+    padding-right: 0.4375rem;
+}
